@@ -32,6 +32,9 @@ export default {
 
 <template>
 
+<div>
+    <h3>Order Summary</h3>
+</div>
     <div class="item-card">
         <li v-for="cart_item in cart_items">
             {{cart_item.item_name}}
@@ -42,9 +45,13 @@ export default {
 </template>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
     .item-card{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 800;
     }
 
     .item-card.hover{

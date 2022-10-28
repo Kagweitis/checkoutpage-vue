@@ -4,7 +4,8 @@
 
 <template>
   <!-- <img src="../assets/img/ncba card.png" alt="card image"> -->
-
+<div class="cont">
+  <h3>Payment Information</h3>
   <div class="card">
 
       <img class="logo" src="../assets/img/ncba logo.png" alt="logo" style="height:20px; ">
@@ -18,6 +19,7 @@
 
 
   </div>
+</div>
 </template>
 
 <style scope>
@@ -25,6 +27,8 @@
     box-shadow: 0 0 40px darkgray;
       
   } */
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
   .card{
     width: 80%;
@@ -42,6 +46,10 @@
 
   .logo{
     size: 10px;
+  }
+
+  .cont{
+    font-family: 'Quicksand', sans-serif;
   }
 
   
