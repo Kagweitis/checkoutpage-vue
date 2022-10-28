@@ -43,4 +43,6 @@ import Cart from './components/Cart.vue'
     flex-basis: 30%;
   }
 
+  
+
 </style>

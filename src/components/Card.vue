@@ -7,12 +7,12 @@
 
   <div class="card">
 
-      <img class="logo" src="../assets/img/ncba logo.png" alt="logo">
+      <img class="logo" src="../assets/img/ncba logo.png" alt="logo" style="height:20px; ">
       <p>
-        CARD HOLDER NAME
+        CARDHOLDER NAME
       </p>
 
-      <img class="chip" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png" alt="chip">
+      <img class="chip" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png" alt="chip" style="height:30px; ">
 
    
 
@@ -38,7 +38,12 @@
     display: flex;
     flex-direction: column;
     size: 10%;
-    /* padding: 10px; */
   }
+
+  .logo{
+    size: 10px;
+  }
+
+  
  
 </style>
