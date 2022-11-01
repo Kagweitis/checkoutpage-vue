@@ -72,6 +72,7 @@ button:focus-visible {
   width: 100%;
   margin: 0;
   padding: 30px;
+  background-color: rgb(241, 230, 230);
   /* text-align: center; */
 }
 

@@ -2,7 +2,6 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Form from './components/Form.vue'
-import Card from './components/Card.vue'
 import Cart from './components/Cart.vue'
 </script>
 
@@ -30,8 +29,9 @@ import Cart from './components/Cart.vue'
     justify-content: space-between;
   }
   .payment-info{
+    background-color: white;
     padding: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
     margin-right: 20px;
     flex-direction: column; 
     align-items: left;
@@ -39,9 +39,10 @@ import Cart from './components/Cart.vue'
   }
 
   .order-summary{
+    background-color: white;
     padding: 50px;
     margin-top: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
     flex-direction: column;
     color: red;
     flex-basis: 30%;
