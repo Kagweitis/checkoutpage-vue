@@ -44,7 +44,6 @@ import Cart from './components/Cart.vue'
     margin-top: 50px;
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
     flex-direction: column;
-    color: red;
     flex-basis: 30%;
   }
 
