@@ -45,8 +45,8 @@ watch: {
             <input type="text" name="card-name" id="card-name" v-model="name"> 
 
             <label for="card-number">Card Number</label>
-            <input type="text" name="card-number" id="card-number" maxlength="19" v-model="card_number" 
-            pattern="[0-9]*" >
+            <input type="text" name="card-number" id="card-number" maxlength="19" v-model="card_number">
+            <!-- pattern="[,0-9]*" -->
 
             <label for="expiration">Expiration Date</label>
             <input type="text" name="expiration" id="expiration" v-model="expiry">

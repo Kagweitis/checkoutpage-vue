@@ -3,8 +3,8 @@ export default {
   name: 'Card',
   props: {
     name: String,
-    card_number: Number,
-    expiry: Number,
+    card_number: String,
+    expiry: String,
   },
 }
 
@@ -21,13 +21,13 @@ export default {
         <img class="chip" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png" alt="chip" style="height:50px; ">
       </div>
       <div>
-        <img class="logo" src="../assets/img/ncba logo.png" alt="logo" style="height:50px;
+        <img class="logo" src="../assets/img/logo-removebg-preview.png" alt="logo" style="height:50px;
         padding: 20px;">  
       </div>
     </div>
 
 
-      <p style="text-align: center; color: aliceblue; font-size: large;">{{ card_number || '#### #### #### ####' }}</p>
+      <p style="text-align: center; color: aliceblue; font-size: large; width: 100%;">{{ card_number || '#### #### #### ####' }}</p>
       <div class="card-details">
         <div>
           <p style="color: aliceblue;">
@@ -60,7 +60,7 @@ export default {
     /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
     background-image: url("../assets/img/attempt1.jpg");
     margin-bottom: 30px;
-    box-shadow: 0 0 40px lightblue;
+    box-shadow: 0 0 40px rgb(146, 204, 224);
     border-radius: 20px;
   }
   img{
