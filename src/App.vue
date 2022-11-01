@@ -10,7 +10,6 @@ import Cart from './components/Cart.vue'
 
   <div class="container">
     <div class="payment-info">
-        <Card />
         <Form />
     </div>
     
