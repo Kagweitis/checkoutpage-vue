@@ -41,7 +41,6 @@ import Cart from './components/Cart.vue'
   .order-summary{
     background-color: white;
     padding: 50px;
-    margin-top: 50px;
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
     flex-direction: column;
     flex-basis: 30%;

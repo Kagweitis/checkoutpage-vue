@@ -53,6 +53,8 @@ watch: {
 
             <label for="cvc">CVC</label>
             <input type="text" name="cvc" id="cvc">
+
+            Total: {{}}
             
 
             <button>Confirm Payment</button>
