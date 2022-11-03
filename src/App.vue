@@ -35,7 +35,8 @@ import Cart from './components/Cart.vue'
     margin-right: 20px;
     flex-direction: column; 
     align-items: left;
-    flex-basis: 40%
+    flex-basis: 40%;
+    border-radius: 20px;
   }
 
   .order-summary{
@@ -44,6 +45,7 @@ import Cart from './components/Cart.vue'
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
     flex-direction: column;
     flex-basis: 30%;
+    border-radius: 20px;
   }
 
   

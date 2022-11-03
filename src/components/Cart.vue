@@ -10,44 +10,56 @@ export default {
             cart_items : [
                 {
                     item_name: 'bike',
-                    item_price: '$1000'
+                    item_price: '$1000',
+                    id: 1
                 },
 
                 {
                     item_name: 'pump',
-                    item_price: '$300'
+                    item_price: '$300',
+                    id: 2
                 },
 
                 {
                     item_name: 'helmet',
-                    item_price: '$100'
+                    item_price: '$100',
+                    id: 3
                 },
 
             ]
         }
     },
     methods: {
-        deleteItem(index) {
-            console.log('deleted')
-            this.items.splice(index, 1)
+        deleteItem(id) {
+        console.log('deleted')
+        const filteredList = this.cart_items.filter(element => {
+        return element.id != id;
+        })
+        this.cart_items = filteredList;
+      }
     },
 
     }
-}
+
 
 </script>
 
 <template>
-<div id="container">
+<div index="container">
     <div class="heading">
         <h3>Order Summary</h3>
     </div>
     <div class="item-card">
         <li class="item" v-for="cart_item in cart_items"
         @deleteItem="deleteItem(index)">
+
+        <div>
             {{cart_item.item_name}}
             {{cart_item.item_price}}
-            <Delete />
+        </div>
+            <div>
+                <Delete />
+            </div>
             
         </li>
     </div>
@@ -75,12 +87,15 @@ export default {
     } */
 
     .item{
-        width: 40%;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        windexth: 40%;
         top: 50%;
         left: 50%;
         background: rgb(120, 120, 236);
         border-radius: 10px;
-        min-width: 400px;
+        min-windexth: 400px;
         padding: 20px;
         margin: 20px;
         color: aliceblue;
@@ -90,7 +105,11 @@ export default {
         list-style: none;
         font-family: 'Quicksand', sans-serif;
         font-weight: 800;
+        justify-content: space-between;
     }
+
+  
+   
 
     /* .item-card.hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
