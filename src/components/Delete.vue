@@ -1,12 +1,19 @@
 
 <script>
     export default {
+        data(){
+            return{
+                
+            }
+        },
+        props: ['id'],
+        emits: ['deleteItem'],
         methods: {
             passId(){
-                console.log("id: ", this.id)
-                this.$emit('id', this.id)
+                this.$emit('deleteItem', { id: this.id })
             }
         }
+       
     }
 </script>
 
@@ -16,9 +23,7 @@
         <!-- <link rel="stylesheet" src="https://kit.fontawesome.com/c3fc2fc6d6.js" crossorigin="anonymous"> -->
     </head>
     <div>
-
-        <i class="fa-sharp fa-solid fa-house"></i>
-        <button  class="delete" @click="passId"
+        <button  class="delete" @click="$emit('deleteItem', id)"
          type="button">x</button>
     </div>
 </template>

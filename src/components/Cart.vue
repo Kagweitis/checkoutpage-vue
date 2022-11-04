@@ -1,5 +1,6 @@
 <script>
 import Delete from './Delete.vue'
+import _ from "lodash"
 export default { 
     name: "Cart",
     components: {
@@ -30,14 +31,24 @@ export default {
         }
     },
     methods: {
-        deleteItem(id) {
-        console.log('deleted')
-        const filteredList = this.cart_items.filter(element => {
-        return element.id != id;
-        })
-        this.cart_items = filteredList;
-      }
+        // deleteItem(payload) {
+        //     console.log('deleted: ' + payload)
+        //     const arrIndex = _.findIndex(this.cart_items, {})
+        
+        //     // const filteredList = this.cart_items.filter(element => {
+        //     //     return element.id != id;
+        //     // })
+        //     // this.cart_items = filteredList;
+        // }
     },
+    emits: {
+        deleteItem(id){
+            console.log('deleted: ' + id)
+            _.remove(this.cart_items, (item) => {
+                return item.id == id
+            })
+        }
+    }
 
     }
 
@@ -50,15 +61,15 @@ export default {
         <h3>Order Summary</h3>
     </div>
     <div class="item-card">
-        <li class="item" v-for="cart_item in cart_items"
-        @deleteItem="deleteItem(index)">
+        <li class="item" v-for="cart_item in cart_items" :key="cart_item.id"
+        >
 
         <div>
             {{cart_item.item_name}}
             {{cart_item.item_price}}
         </div>
             <div>
-                <Delete />
+                <Delete :id="cart_item.id"  @delete-item="deleteItem()" />
             </div>
             
         </li>
