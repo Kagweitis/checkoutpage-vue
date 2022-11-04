@@ -26,6 +26,7 @@ export default {
                     item_price: '$100',
                     id: 3
                 },
+                
 
             ]
         }
@@ -101,12 +102,12 @@ export default {
         display: flex;
         flex-direction: row;
         /* align-items: center; */
-        windexth: 40%;
+        /* max-windexth: 40%; */
         top: 50%;
         left: 50%;
-        background: rgb(120, 120, 236);
-        border-radius: 10px;
-        min-windexth: 400px;
+        background: rgb(45, 45, 46);
+        border-radius: 0px;
+        /* min-windexth: 400px; */
         padding: 20px;
         margin: 20px;
         color: aliceblue;

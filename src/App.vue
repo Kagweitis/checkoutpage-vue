@@ -46,6 +46,7 @@ import Cart from './components/Cart.vue'
     flex-direction: column;
     flex-basis: 30%;
     border-radius: 20px;
+    max-height: 500px;
   }
 
   

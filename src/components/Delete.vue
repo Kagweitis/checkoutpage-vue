@@ -37,7 +37,7 @@
     }
     .delete{
         color: aliceblue;
-        background-color: rgb(120, 120, 236);
+        background-color: rgb(45, 45, 46);
         padding: 0;
     }
 
